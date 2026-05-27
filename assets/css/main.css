@@ -3238,7 +3238,7 @@ input, select, textarea {
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
-			background-attachment: scroll,								scroll,														scroll;
+			background-attachment: scroll,								scroll,														fixed;
 			z-index: -1;
 		}
 
@@ -4687,3 +4687,25 @@ input, select, textarea {
 		}
 
 	}
+
+/* Crest Border Panels */
+.crest-border-left,
+.crest-border-right {
+    position: fixed;
+    top: 0;
+    width: calc((100vw - 72rem) / 2);
+    height: 100vh;
+    background-image: url("../../images/Kjell_Crest.png");
+    background-size: 150px 150px;
+    background-repeat: repeat;
+    background-color: #1e252d;
+    z-index: 9999;
+}
+
+.crest-border-left {
+    left: 0;
+}
+
+.crest-border-right {
+    right: 0;
+}
