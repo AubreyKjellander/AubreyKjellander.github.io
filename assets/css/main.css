@@ -4709,3 +4709,10 @@ input, select, textarea {
 .crest-border-right {
     right: 0;
 }
+
+/* Force post images to same height */
+#main > .posts > article .image.fit img {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
