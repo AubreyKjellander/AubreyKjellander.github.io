@@ -4713,6 +4713,7 @@ input, select, textarea {
 /* Force post images to same height */
 #main > .posts > article .image.fit img {
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
+    background-color: #ffffff;
 }
