@@ -4696,7 +4696,7 @@ input, select, textarea {
     width: calc((100vw - 72rem) / 2);
     height: 100vh;
     background-image: url("../../images/Kjell_Crest.png");
-    background-size: 200px 200px;
+    background-size: 190px 190px;
     background-repeat: repeat;
     background-color: #1e252d;
     z-index: 9999;
