@@ -4711,11 +4711,6 @@ input, select, textarea {
 }
 
 /* Dropdown Buttons */
-.dropdowns {
-    width: 100%;
-    padding: 2rem 4rem;
-}
-
 .dropdown-item {
     width: 100%;
     margin-bottom: 0.75rem;
@@ -4725,7 +4720,7 @@ input, select, textarea {
     width: 100%;
     padding: 1rem 2rem;
     background-color: #212931;
-    color: #ffffff;
+    color: #ffffff !important;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-size: 0.9rem;
     font-weight: 900;
@@ -4734,34 +4729,41 @@ input, select, textarea {
     text-align: left;
     border: none;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    display: block;
+    box-shadow: none;
+    height: auto;
+    line-height: normal;
 }
 
-    .dropdown-btn:hover {
-        background-color: #18bfef;
-        color: #ffffff;
-    }
+.dropdown-btn:hover {
+    background-color: #18bfef;
+    box-shadow: none;
+    color: #ffffff !important;
+}
 
-    .dropdown-btn::after {
-        content: ' ▼';
-        float: right;
-    }
+.dropdown-btn::after {
+    content: ' ▼';
+    float: right;
+}
 
-    .dropdown-btn.active::after {
-        content: ' ▲';
-    }
+.dropdown-btn.active::after {
+    content: ' ▲';
+}
 
 .dropdown-content {
     display: none;
     padding: 1.5rem 2rem;
     background-color: #f5f5f5;
     border-left: solid 4px #18bfef;
+    text-align: left;
 }
 
-    .dropdown-content p {
-        margin-bottom: 1rem;
-    }
+.dropdown-content p {
+    margin-bottom: 1rem;
+    color: #212931;
+}
 
-    .dropdown-content.open {
-        display: block;
-    }
+.dropdown-content.open {
+    display: block;
+}
