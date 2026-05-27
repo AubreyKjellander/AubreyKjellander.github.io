@@ -179,6 +179,15 @@ So, which one are you here to offer?</p>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+		<script>
+    document.querySelectorAll('.dropdown-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            button.classList.toggle('active');
+            const content = button.nextElementSibling;
+            content.classList.toggle('open');
+        });
+    });
+		</script>
 	</body>
 </html>
 
