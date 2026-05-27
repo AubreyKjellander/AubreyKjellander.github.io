@@ -4689,24 +4689,23 @@ input, select, textarea {
 	}
 
 /* Crest Border Panels */
-body::before,
-body::after {
-    content: '';
+.crest-border-left,
+.crest-border-right {
     position: fixed;
     top: 0;
-    width: calc((100% - 72rem) / 2);
-    height: 100%;
-    background-image: url("images/Kjell_Crest.png");
+    width: calc((100vw - 72rem) / 2);
+    height: 100vh;
+    background-image: url("../../images/Kjell_Crest.png");
     background-size: 150px 150px;
     background-repeat: repeat;
     background-color: #1e252d;
-    z-index: 0;
+    z-index: 9999;
 }
 
-body::before {
+.crest-border-left {
     left: 0;
 }
 
-body::after {
+.crest-border-right {
     right: 0;
 }
